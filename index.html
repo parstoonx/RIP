@@ -2,22 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پخش آهنگ رنگی‌رنگی</title>
+    <title>پخش آهنگ پری</title>
     <style>
         body {
-            background: black;
+            background: linear-gradient(45deg, red, blue, green, yellow, purple);
+            background-size: 400% 400%;
+            animation: gradientBG 5s infinite alternate;
             text-align: center;
             font-family: Arial, sans-serif;
             color: white;
             overflow: hidden;
-            animation: partyLights 5s infinite alternate;
         }
-        @keyframes partyLights {
-            0% { background-color: red; }
-            25% { background-color: blue; }
-            50% { background-color: green; }
-            75% { background-color: yellow; }
-            100% { background-color: purple; }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
         .container {
             display: flex;
@@ -46,7 +44,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>آهنگ رنگی‌رنگی</h1>
+        <h1>آهنگ پری</h1>
         <audio id="music" controls autoplay>
             <source src="https://github.com/parstoonx/PerryParty/raw/refs/heads/main/%D9%BE%D8%B1%DB%8C%20%D9%BE%D8%A7%D8%B1%D8%AA%DB%8C.mp3" type="audio/mpeg">
             مرورگر شما از پخش آهنگ پشتیبانی نمی‌کند.
@@ -57,6 +55,9 @@
         </a>
         <a href="https://instagram.com/parstoonx" target="_blank">
             <button class="btn">صاحب وب</button>
+        </a>
+        <a href="https://t5.cinemasoren.ir/" target="_blank">
+            <button class="btn">خرید طلسم شدگان فصل 5</button>
         </a>
     </div>
 </body>
